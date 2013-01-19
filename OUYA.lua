@@ -68,7 +68,7 @@ function OUYA.invokeButtonListener(keyName, phase)
 	end
 end
 
-function onKeyEvent( event )
+local function onKeyEvent( event )
 	local result = OUYA.invokeButtonListener( event.keyName, event.phase )
 
 	if event.keyName == "back" and buttonListeners["back"] then
@@ -76,6 +76,6 @@ function onKeyEvent( event )
 	end
 	return false
 end
-Runtime:addEventListener("key",onKeyEvent)
+Runtime:addEventListener("key", onKeyEvent)
 
 return OUYA

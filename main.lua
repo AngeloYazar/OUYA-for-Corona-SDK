@@ -1,5 +1,5 @@
 --[[ 
-	This example diplays the latest event name and phase in the center of the screen.
+	This example displays the latest event name and phase in the center of the screen.
 ]]
 
 OUYA = require "OUYA"
@@ -14,10 +14,10 @@ end
 OUYA.bind('O', HandleButton)
 OUYA.bind('U', HandleButton)
 OUYA.bind('A', HandleButton)
-OUYA.bind('left', HandleButton)
-OUYA.bind('right', HandleButton)
-OUYA.bind('up', HandleButton)
-OUYA.bind('down', HandleButton)
+OUYA.bind('left',	HandleButton)
+OUYA.bind('right',	HandleButton)
+OUYA.bind('up',		HandleButton)
+OUYA.bind('down',	HandleButton)
 
 -- Use unbind to unbind a button, only used if you don't want to use that button anymore.
 -- Calling OUYA.bind again for a button will overwrite the last listener.
